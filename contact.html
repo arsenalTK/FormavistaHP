@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="合同会社FormaVista Consultingへのお問い合わせ。ご相談・お見積りなど、お気軽にお問い合わせください。">
+  <title>お問い合わせ | 合同会社FormaVista Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="6" fill="#c9a84c"/>
+            <text x="50%" y="55%" dominant-baseline="central" text-anchor="middle" fill="#0a0e1a" font-family="sans-serif" font-weight="700" font-size="18">FV</text>
+          </svg>
+        </div>
+        <div class="header__logo-text">Forma<span>Vista</span></div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">ホーム</a></li>
+          <li><a href="about.html" class="nav__link">会社概要</a></li>
+          <li><a href="services.html" class="nav__link">サービス</a></li>
+          <li><a href="contact.html" class="nav__contact nav__link--active">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <p class="page-header__sub">Contact</p>
+      <h1 class="page-header__title">お問い合わせ</h1>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li><a href="index.html" class="breadcrumb__link">ホーム</a></li>
+        <li class="breadcrumb__separator">/</li>
+        <li>お問い合わせ</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <h2 class="contact-info__title">お気軽にご相談ください</h2>
+          <p class="contact-info__text">
+            コンサルティングに関するご相談、お見積りのご依頼など、
+            下記フォームよりお気軽にお問い合わせください。
+            担当者より折り返しご連絡いたします。
+          </p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info__label">メール</p>
+              <p class="contact-info__value">info@formavista.co.jp</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info__label">所在地</p>
+              <p class="contact-info__value">東京都</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-info__label">営業時間</p>
+              <p class="contact-info__value">平日 9:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="form fade-in" id="contactForm">
+          <div class="form__group">
+            <label for="company" class="form__label">会社名</label>
+            <input type="text" id="company" name="company" class="form__input" placeholder="例：株式会社〇〇">
+          </div>
+          <div class="form__group">
+            <label for="name" class="form__label form__label--required">お名前</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="例：山田 太郎" required>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label form__label--required">メールアドレス</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="例：info@example.com" required>
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">電話番号</label>
+            <input type="tel" id="phone" name="phone" class="form__input" placeholder="例：03-1234-5678">
+          </div>
+          <div class="form__group">
+            <label for="category" class="form__label form__label--required">お問い合わせ種別</label>
+            <select id="category" name="category" class="form__select" required>
+              <option value="">選択してください</option>
+              <option value="consultation">コンサルティングのご相談</option>
+              <option value="estimate">お見積りのご依頼</option>
+              <option value="partnership">協業のご提案</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label form__label--required">お問い合わせ内容</label>
+            <textarea id="message" name="message" class="form__textarea" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </div>
+          <button type="submit" class="form__submit">送信する</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Forma<span>Vista</span> Consulting</p>
+          <p class="footer__brand-text">
+            IT戦略と経営コンサルティングの融合により、<br>
+            企業の持続的な成長と変革を支援します。
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">IT戦略コンサルティング</a></li>
+            <li><a href="services.html">経営コンサルティング</a></li>
+            <li><a href="services.html">DX推進支援</a></li>
+            <li><a href="services.html">プロジェクトマネジメント</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 合同会社FormaVista Consulting. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
