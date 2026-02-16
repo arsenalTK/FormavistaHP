@@ -1,10 +1,21 @@
 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="4" fill="#0a0e1a"/>
-  <g transform="translate(3, 2.5) scale(0.217)">
-    <polygon points="60,12 20,60 42,60 42,42 60,42" fill="#e0c86e" opacity="0.9"/>
-    <polygon points="60,12 100,60 78,60 78,42 60,42" fill="#c9a84c"/>
-    <polygon points="20,60 42,60 42,78 60,108" fill="#a88a3a" opacity="0.85"/>
-    <polygon points="100,60 78,60 78,78 60,108" fill="#c9a84c" opacity="0.75"/>
-    <polygon points="42,60 60,42 78,60 60,78" fill="#e8d68a" opacity="0.5"/>
+  <rect width="32" height="32" rx="6" fill="#0a0e1a"/>
+  <defs>
+    <linearGradient id="bfav" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#4a9ae0"/>
+      <stop offset="100%" stop-color="#1d5a8a"/>
+    </linearGradient>
+    <linearGradient id="gfav" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#e0c86e"/>
+      <stop offset="100%" stop-color="#b08e35"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(3, 3.5) scale(0.215)">
+    <path d="M 46 12 C 24 16, 10 34, 12 56 C 14 74, 28 88, 48 92 L 56 78 C 42 76, 32 66, 30 54 C 28 42, 34 30, 46 24 Z" fill="url(#bfav)"/>
+    <path d="M 46 24 C 52 20, 58 20, 62 24 L 58 36 C 56 32, 52 30, 48 32 Z" fill="url(#bfav)" opacity="0.85"/>
+    <path d="M 74 12 C 96 16, 110 34, 108 56 C 106 74, 92 88, 72 92 L 64 78 C 78 76, 88 66, 90 54 C 92 42, 86 30, 74 24 Z" fill="url(#gfav)"/>
+    <path d="M 74 24 C 68 20, 62 20, 58 24 L 62 36 C 64 32, 68 30, 72 32 Z" fill="url(#gfav)" opacity="0.85"/>
+    <path d="M 48 92 C 52 96, 56 98, 60 100 C 64 98, 68 96, 72 92 L 64 78 C 62 80, 58 80, 56 78 Z" fill="url(#gfav)" opacity="0.5"/>
+    <path d="M 48 92 C 52 96, 56 98, 60 100 L 56 78 C 52 82, 48 88, 48 92 Z" fill="url(#bfav)" opacity="0.5"/>
   </g>
 </svg>

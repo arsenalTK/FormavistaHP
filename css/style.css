@@ -17,6 +17,9 @@
   --gold: #c9a84c;
   --gold-light: #e0c86e;
   --gold-dark: #a88a3a;
+  --blue: #2b6ea5;
+  --blue-light: #4a9ae0;
+  --blue-dark: #1d5a8a;
   --white: #ffffff;
   --gray-50: #f8f9fa;
   --gray-100: #f0f1f4;
@@ -285,7 +288,7 @@ img {
   opacity: 0.04;
   background-image:
     radial-gradient(circle at 20% 50%, var(--gold) 1px, transparent 1px),
-    radial-gradient(circle at 80% 20%, var(--gold) 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, var(--blue-light) 1px, transparent 1px),
     radial-gradient(circle at 60% 80%, var(--gold) 1px, transparent 1px);
   background-size: 60px 60px, 80px 80px, 100px 100px;
 }
@@ -479,13 +482,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--navy-50), #f0eef5);
+  background: linear-gradient(135deg, var(--navy-50), #edf2f7);
   border-radius: 12px;
   transition: background var(--transition), transform var(--transition);
 }
 
 .feature-card:hover .feature-card__icon {
-  background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(201, 168, 76, 0.05));
+  background: linear-gradient(135deg, rgba(43, 110, 165, 0.1), rgba(43, 110, 165, 0.05));
   transform: scale(1.05);
 }
 
@@ -497,7 +500,7 @@ img {
 }
 
 .feature-card:hover .feature-card__icon svg {
-  stroke: var(--gold-dark);
+  stroke: var(--blue);
 }
 
 .feature-card__title {
@@ -742,7 +745,7 @@ img {
 .contact-info__icon {
   width: 40px;
   height: 40px;
-  background: var(--navy-50);
+  background: linear-gradient(135deg, #edf4fa, var(--navy-50));
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -753,7 +756,7 @@ img {
 .contact-info__icon svg {
   width: 20px;
   height: 20px;
-  stroke: var(--navy-600);
+  stroke: var(--blue);
 }
 
 .contact-info__label {
@@ -811,8 +814,8 @@ img {
 .form__select:focus,
 .form__textarea:focus {
   outline: none;
-  border-color: var(--navy-400);
-  box-shadow: 0 0 0 3px rgba(45, 53, 97, 0.1);
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(43, 110, 165, 0.1);
 }
 
 .form__textarea {
