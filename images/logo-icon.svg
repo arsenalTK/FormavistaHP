@@ -1,64 +1,91 @@
 <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bi" x1="20%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="#4a9ae0"/>
-      <stop offset="100%" stop-color="#1d5a8a"/>
+    <!-- Blue gradients for 3D ribbon effect -->
+    <linearGradient id="bl1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5ba8d9"/>
+      <stop offset="40%" stop-color="#2b7ab5"/>
+      <stop offset="100%" stop-color="#1a5e8c"/>
     </linearGradient>
-    <linearGradient id="gi" x1="20%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="#e0c86e"/>
-      <stop offset="100%" stop-color="#b08e35"/>
+    <linearGradient id="bl2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a90cc"/>
+      <stop offset="100%" stop-color="#1d6490"/>
     </linearGradient>
+    <!-- Gold gradients for 3D ribbon effect -->
+    <linearGradient id="gl1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dcc060"/>
+      <stop offset="40%" stop-color="#c49b30"/>
+      <stop offset="100%" stop-color="#a07a20"/>
+    </linearGradient>
+    <linearGradient id="gl2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4b040"/>
+      <stop offset="100%" stop-color="#b08828"/>
+    </linearGradient>
+    <!-- Shadow filter for depth -->
+    <filter id="ds" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0a0e1a" flood-opacity="0.15"/>
+    </filter>
   </defs>
-  <!-- Blue flowing shape (F) - upper left to lower center -->
+
+  <!-- === GOLD RIBBON (V) - BACK LAYER === -->
+  <!-- Gold ribbon lower-back portion (behind blue at crossing) -->
   <path d="
-    M 46 12
-    C 24 16, 10 34, 12 56
-    C 14 74, 28 88, 48 92
-    L 56 78
-    C 42 76, 32 66, 30 54
-    C 28 42, 34 30, 46 24
+    M 68 18
+    C 72 16, 78 16, 84 20
+    C 98 30, 108 48, 106 66
+    C 104 82, 94 94, 78 100
+    C 72 102, 66 102, 62 100
+    L 58 84
+    C 62 86, 66 86, 70 84
+    C 80 80, 88 72, 90 60
+    C 92 48, 86 36, 76 30
+    C 74 28, 72 28, 70 30
     Z
-  " fill="url(#bi)"/>
-  <!-- Blue shape continues - crossing over gold -->
+  " fill="url(#gl1)"/>
+
+  <!-- === BLUE RIBBON (F) - MIDDLE LAYER === -->
+  <!-- Blue ribbon main body - left crescent -->
   <path d="
-    M 46 24
-    C 52 20, 58 20, 62 24
-    L 58 36
-    C 56 32, 52 30, 48 32
+    M 52 18
+    C 48 16, 42 16, 36 20
+    C 22 30, 12 48, 14 66
+    C 16 82, 26 94, 42 100
+    C 48 102, 54 102, 58 100
+    L 62 84
+    C 58 86, 54 86, 50 84
+    C 40 80, 32 72, 30 60
+    C 28 48, 34 36, 44 30
+    C 46 28, 48 28, 50 30
     Z
-  " fill="url(#bi)" opacity="0.85"/>
-  <!-- Gold flowing shape (V) - upper right to lower center -->
+  " fill="url(#bl1)" filter="url(#ds)"/>
+
+  <!-- Blue F crossbar - passes OVER gold -->
   <path d="
-    M 74 12
-    C 96 16, 110 34, 108 56
-    C 106 74, 92 88, 72 92
-    L 64 78
-    C 78 76, 88 66, 90 54
-    C 92 42, 86 30, 74 24
+    M 44 44
+    C 46 40, 52 38, 60 38
+    L 72 38
+    C 74 38, 76 40, 76 42
+    C 76 44, 74 46, 72 46
+    L 60 48
+    C 52 48, 46 48, 44 44
     Z
-  " fill="url(#gi)"/>
-  <!-- Gold shape continues - crossing over blue -->
+  " fill="url(#bl2)" filter="url(#ds)"/>
+
+  <!-- === GOLD RIBBON (V) - FRONT LAYER === -->
+  <!-- Gold ribbon upper-front portion (in front of blue at top crossing) -->
   <path d="
-    M 74 24
-    C 68 20, 62 20, 58 24
-    L 62 36
-    C 64 32, 68 30, 72 32
+    M 68 18
+    C 72 16, 76 16, 80 18
+    L 76 30
+    C 74 28, 72 28, 70 30
+    L 68 18
     Z
-  " fill="url(#gi)" opacity="0.85"/>
-  <!-- Bottom merge point -->
+  " fill="url(#gl2)"/>
+
+  <!-- Gold V inner fold detail -->
   <path d="
-    M 48 92
-    C 52 96, 56 98, 60 100
-    C 64 98, 68 96, 72 92
-    L 64 78
-    C 62 80, 58 80, 56 78
-    Z
-  " fill="url(#gi)" opacity="0.5"/>
-  <path d="
-    M 48 92
-    C 52 96, 56 98, 60 100
-    L 56 78
-    C 52 82, 48 88, 48 92
-    Z
-  " fill="url(#bi)" opacity="0.5"/>
+    M 78 100
+    C 72 102, 66 102, 62 100
+    L 70 84
+    C 66 88, 64 92, 62 100
+  " fill="url(#gl2)" opacity="0.3"/>
 </svg>
