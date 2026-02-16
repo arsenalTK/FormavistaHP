@@ -1,0 +1,33 @@
+<svg viewBox="0 0 420 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0c86e"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a88a3a"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d68a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8a7030"/>
+    </linearGradient>
+  </defs>
+  <!-- FV Mark (scaled to fit 60x60 within 80px height) -->
+  <g transform="translate(5, 6) scale(0.57)">
+    <polygon points="60,12 20,60 42,60 42,42 60,42" fill="url(#g2)" opacity="0.9"/>
+    <polygon points="60,12 100,60 78,60 78,42 60,42" fill="url(#g1)"/>
+    <polygon points="20,60 42,60 42,78 60,108" fill="url(#g3)" opacity="0.85"/>
+    <polygon points="100,60 78,60 78,78 60,108" fill="url(#g1)" opacity="0.75"/>
+    <polygon points="42,60 60,42 78,60 60,78" fill="url(#g2)" opacity="0.5"/>
+  </g>
+  <!-- FORMAVISTA text -->
+  <text x="80" y="42" font-family="'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" letter-spacing="3">
+    FORMA<tspan fill="#c9a84c">VISTA</tspan>
+  </text>
+  <!-- CONSULTING text -->
+  <text x="82" y="62" font-family="'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#8a92b3" letter-spacing="5">
+    CONSULTING
+  </text>
+</svg>

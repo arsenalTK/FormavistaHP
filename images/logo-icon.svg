@@ -1,0 +1,28 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric FV Mark - Prism/Crystal Shape -->
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0c86e"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a88a3a"/>
+    </linearGradient>
+    <linearGradient id="gold-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d68a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="gold-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8a7030"/>
+    </linearGradient>
+  </defs>
+  <!-- Left facet of the crystal/prism (F shape implied) -->
+  <polygon points="60,12 20,60 42,60 42,42 60,42" fill="url(#gold-light)" opacity="0.9"/>
+  <!-- Right facet (V shape implied) -->
+  <polygon points="60,12 100,60 78,60 78,42 60,42" fill="url(#gold-gradient)"/>
+  <!-- Bottom left facet -->
+  <polygon points="20,60 42,60 42,78 60,108" fill="url(#gold-dark)" opacity="0.85"/>
+  <!-- Bottom right facet -->
+  <polygon points="100,60 78,60 78,78 60,108" fill="url(#gold-gradient)" opacity="0.75"/>
+  <!-- Center diamond accent -->
+  <polygon points="42,60 60,42 78,60 60,78" fill="url(#gold-light)" opacity="0.5"/>
+</svg>
