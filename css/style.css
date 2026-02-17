@@ -157,10 +157,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: auto;
+  min-height: 72px;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 8px 24px;
 }
 
 .header__logo {
