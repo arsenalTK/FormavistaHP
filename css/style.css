@@ -166,26 +166,12 @@ img {
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.header__logo-icon {
-  width: 36px;
-  height: 36px;
+.header__logo-img {
+  height: 40px;
+  width: auto;
   display: block;
-  flex-shrink: 0;
-}
-
-.header__logo-text {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: 0.04em;
-}
-
-.header__logo-text span {
-  color: var(--gold);
 }
 
 .nav__list {
@@ -1138,26 +1124,14 @@ img {
 }
 
 .footer__brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: block;
   margin-bottom: 16px;
 }
 
-.footer__brand-icon {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.footer__brand-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.footer__brand-name span {
-  color: var(--gold);
+.footer__brand-img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .footer__brand-text {
