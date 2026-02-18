@@ -1191,6 +1191,20 @@ img {
   text-align: center;
   font-size: 0.8rem;
   color: var(--navy-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__privacy-link {
+  font-size: 0.8rem;
+  color: var(--navy-300);
+  transition: color var(--transition);
+}
+
+.footer__privacy-link:hover {
+  color: var(--gold);
 }
 
 /* --- Profile Page --- */
@@ -1486,6 +1500,120 @@ img {
 .message__author-role {
   font-size: 0.82rem;
   color: var(--navy-300);
+}
+
+/* --- Privacy Policy --- */
+.privacy {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy__intro {
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  line-height: 1.9;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.privacy__section {
+  margin-bottom: 40px;
+}
+
+.privacy__heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy-800);
+  margin-bottom: 12px;
+  padding-left: 16px;
+  border-left: 3px solid var(--gold);
+}
+
+.privacy__text {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+.privacy__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.privacy__list li {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  padding: 6px 0 6px 20px;
+  position: relative;
+  line-height: 1.8;
+}
+
+.privacy__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 2px;
+  background: var(--gold);
+}
+
+.privacy__contact {
+  background: var(--gray-50);
+  padding: 24px 28px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+  margin-top: 12px;
+}
+
+.privacy__contact p {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+
+.privacy__date {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  text-align: right;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* --- Contact Privacy Consent --- */
+.form__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.form__consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--navy-700);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.form__consent-label {
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.form__consent-label a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.form__consent-label a:hover {
+  color: var(--blue-dark);
 }
 
 /* --- Animations --- */

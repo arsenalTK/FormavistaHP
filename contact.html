@@ -141,6 +141,12 @@
             <label for="message" class="form__label form__label--required">お問い合わせ内容</label>
             <textarea id="message" name="message" class="form__textarea" placeholder="お問い合わせ内容をご記入ください" required></textarea>
           </div>
+          <div class="form__consent">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy" class="form__consent-label">
+              <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する
+            </label>
+          </div>
           <button type="submit" class="form__submit">送信する</button>
         </form>
 
@@ -182,6 +188,7 @@
         </div>
       </div>
       <div class="footer__bottom">
+        <p><a href="privacy.html" class="footer__privacy-link">プライバシーポリシー</a></p>
         <p>&copy; 2026 FormaVista Consulting. All Rights Reserved.</p>
       </div>
     </div>
